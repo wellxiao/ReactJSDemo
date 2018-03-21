@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
-import { HashRouter, BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 
 import Home from "./component/home/index.js";
 import About from "./component/about/index.js";
@@ -14,6 +14,7 @@ const route = (
       <Route exact path="/" component={Home} />
       <Route path="/Home" component={Home} />
       <Route path="/About" component={About} />
+      <Route path="/Message" component={Message} />
     </App>
   </HashRouter>
 );
